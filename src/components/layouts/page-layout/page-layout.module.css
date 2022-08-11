@@ -5,7 +5,6 @@
   background-color: var(--c-dark-1);
   position: relative;
   font-family: var(--f-basic);
-  overflow: hidden;
 }
 
 .loaderContainer {

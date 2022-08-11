@@ -41,14 +41,8 @@ export default function HTML(props) {
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
           style={{
-            overflow: 'hidden',
             zIndex: 1,
-            top: 0,
-            left: 0,
-            right: 0,
-            position: 'fixed',
             height: '100%',
-            overflow: 'scroll'
           }}
         />
         <div
