@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: "Traffacademy",
     description: "Traffacademy",
-    siteUrl: `https://traffacademy.com`
+    siteUrl: `https://live.traffacademy.com`
   },
   plugins: [
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
         output: '/',
-        resolveSiteUrl: () => 'https://traffacademy.com',
+        resolveSiteUrl: () => 'https://live.traffacademy.com',
       }
     },
     "gatsby-plugin-react-helmet",
