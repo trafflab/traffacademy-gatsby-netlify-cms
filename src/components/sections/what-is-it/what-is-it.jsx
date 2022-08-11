@@ -14,20 +14,20 @@ export default function WhatIsIt({ data}) {
   //   query whatIsItQuery {
   //     markdownRemark {
   //       frontmatter {
-  //         whatIsIt {
-  //           cards {
-  //             text
-  //           }
-  //           text
-  //           title {
-  //             part
-  //           }
-  //           image_480 {
-  //             childImageSharp {
-  //               gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
-  //             }
-  //           }
-  //         }
+          // whatIsIt {
+          //   cards {
+          //     text
+          //   }
+          //   text
+          //   title {
+          //     part
+          //   }
+          //   image_480 {
+          //     childImageSharp {
+          //       gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+          //     }
+          //   }
+          // }
   //       }
   //     }
   //   }

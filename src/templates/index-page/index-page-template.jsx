@@ -77,6 +77,11 @@ export const query = graphql`
           title {
             part
           }
+          image_480 {
+            childImageSharp {
+              gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+            }
+          }
         }
 
         itIsForYou {
