@@ -1,0 +1,72 @@
+@import url(./fonts/helios-extra/helios-extra-font.css);
+
+html {
+  font-size: calc(1vw / 14.4);
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: calc(1vw / 3.2);
+    background-color: #131313;
+  }
+}
+
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+  --c-dark-1: #131313;
+  --c-dark-2: #181818;
+  --c-dark-3: rgba(255, 255, 255, 0.16);
+  --c-gray-1: #B4B4B4;
+  --c-gray-2:#ADADAD;
+  --c-purple: #CC99FF;
+  --c-blue: #699CFC;
+  --c-red: #FF6666;
+  --c-green: #3DCA3F;
+
+  --f-basic: 'HeliosExt';
+
+  /* relative to 1440px */
+  --fz-h-big: 42rem;
+  --fz-h-medium: 36rem;
+  --fz-h-small: 24rem; ;
+  --fz-c-big: 22rem;
+  --fz-c-medium: 20rem;
+  --fz-c-small: 18rem;
+  --fz-b-big: 16rem;
+  --fz-b-medium: 14rem;
+  --fz-b-small: 12rem;
+
+  --tr-link-opacity: linear 0.35s opacity;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, p, pre {
+  margin: 0;
+}
+
+a[href^=tel] {
+  text-decoration:inherit;
+  color: inherit;
+}
+
+@keyframes openAniamtion {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes closeAniamtion {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}

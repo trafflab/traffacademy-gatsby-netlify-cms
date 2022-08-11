@@ -1,0 +1,183 @@
+.aboutUs {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rem;
+  z-index: 2;
+  position: relative;
+  padding-bottom: 100rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  font-size: var(--fz-h-big);
+  font-weight: 700;
+  line-height: 62rem;
+  color: var(--c-white);
+  width: 520rem;
+  font-family: var(--f-basic);
+  margin-left: 120rem;
+}
+
+.imageContainer {
+  
+}
+
+.nameContainer {
+  font-family: var(--f-basic);
+  width: 680rem;
+  margin: auto;
+  margin-top: -120rem;
+}
+
+.name {
+  font-size: 52rem;
+  font-weight: 400;
+  line-height: 62rem;
+  color: var(--c-white);
+  margin-bottom: 12rem;
+  width: 500rem;
+}
+
+.masterOf {
+  font-size: var(--fz-b-big);
+  font-weight: 700;
+  line-height: 24rem;
+  color: var(--c-gray-1);
+}
+
+.list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.element {
+  position: absolute;
+}
+
+.team {
+  top: 237rem;
+  left: 130rem;
+}
+
+.lines {
+  top: 228rem;
+  right: 212rem;
+}
+
+.budget {
+  top: 436rem;
+  left: 144rem;
+}
+
+.turnover {
+  top: 442rem;
+  right: 139rem;
+}
+
+
+.listText {
+  font-size: var(--fz-c-big);
+  font-weight: 400;
+  line-height: 32rem;
+  color: var(--c-white);
+  font-family: var(--f-basic);
+  text-decoration: none;
+}
+
+.millions {
+  color: var(--c-white)!important;
+  text-decoration: none!important;
+}
+
+
+@media screen and (max-width: 480px) {
+  .aboutUs {
+    padding-top: 20rem;
+    padding-bottom: 40rem;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .title {
+    font-size: var(--fz-c-medium);
+    line-height: 30rem;
+    width: 280rem;
+    margin-left: 0;
+  }
+
+  .imageContainer {
+    width: 100%;
+    min-height: 352rem;
+  }
+  
+  .nameContainer {
+    width: 280rem;
+    margin-top: -70rem;
+    margin-bottom: 25rem;
+  }
+  
+  .name {
+    font-size: var(--fz-c-medium);
+    line-height: 30rem;
+    margin-bottom: 4rem;
+    width: 204rem;
+    text-align: start;
+  }
+  
+  .masterOf {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+    width: 190rem;
+  }
+
+  .list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24rem;
+    column-gap: 20rem;
+  }
+  
+  .element {
+    position: relative;
+    width: 130rem;
+  }
+  
+  .team {
+    top: 0;
+    left: 0;
+    justify-self: end;
+
+  }
+  
+  .lines {
+    top: 0;
+    right: 0;
+  }
+  
+  .budget {
+    top: 0;
+    left: 0;
+    justify-self: end;
+  }
+  
+  .turnover {
+    top: 0;
+    right: 0;
+  }
+
+  .listText {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+  }
+}

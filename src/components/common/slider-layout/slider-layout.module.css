@@ -1,0 +1,64 @@
+.arrowContainer {
+  width: 1320rem;
+  display: grid;
+  grid-auto-flow: column;
+  position: relative;
+}
+
+.prevArrow {
+  /* position: absolute;
+  top: calc(50% - 30rem);
+  left: 0;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  transition: 0.35s ease-out opacity, 0.35s ease-out visability;
+  visibility: visible;
+  opacity: 1; */
+  display: none;
+}
+
+.prevArrow:disabled {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nextArrow {
+  position: absolute;
+  top: calc(50% - 30rem);
+  right: 102rem;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  transition: 0.35s ease-out opacity, 0.35s ease-out visability;
+  visibility: visible;
+  opacity: 1;
+}
+
+.nextArrow:disabled {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .arrowContainer {
+    width: 100%;
+    padding-left: 20rem;
+    box-sizing: border-box;
+  }
+
+  .prevArrow {
+    /* top: calc(50% - 16rem);
+    left: -0rem; */
+  }
+  
+  .prevArrow:disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .nextArrow {
+    top: calc(50% - 16rem);
+    right: 0rem;
+  }
+}

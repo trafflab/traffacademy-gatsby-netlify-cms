@@ -1,0 +1,18 @@
+.listElement {
+
+}
+
+.link {
+  font-size: var(--fz-c-small);
+  color: var(--c-white);
+  font-weight: 700;
+  font-family: var(--f-basic);
+  text-decoration: none;
+  line-height: 1.44;
+  transition: var(--tr-link-opacity);
+}
+
+.link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

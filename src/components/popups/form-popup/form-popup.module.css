@@ -1,0 +1,209 @@
+.formPopup {
+  width: 834rem;
+  background-color: var(--c-dark-2);
+  position: relative;
+  margin-top: 87rem;
+  border-radius: 20rem;
+  overflow: hidden;
+  padding: 62rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 62rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 9rem;
+  right: 9rem;
+  background: url(../../../images/icons/close.svg) no-repeat center;
+  background-size: 32rem 32rem;
+  width: 32rem;
+  height: 32rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: var(--tr-link-opacity);
+  padding: 0;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.gift {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 38rem 0 24rem 24rem;
+  box-sizing: border-box;
+  border-radius: 8rem;
+  background: rgb(54,49,49);
+  background: linear-gradient(0deg, rgba(54,49,49,1) 33%, rgba(41,37,37,1) 33%);;
+}
+
+.giftText {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-white);
+}
+
+.imageContainer {
+  width: 251rem;
+  height: 321rem;
+  margin-bottom: 21rem;
+  overflow: hidden;
+  align-self: flex-end;
+  margin-left: 49rem;
+}
+
+.giftText {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-white)
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 324rem;
+  /* justify-content: space-between; */
+}
+
+.textContainer {
+  margin-bottom: 20rem;
+}
+
+.title {
+  margin-bottom: 8rem;
+  font-family: var(--f-basic);
+  font-size: var(--fz-c-big);
+  color: var(--c-white);
+  line-height: 34rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-family: var(--f-basic);
+  font-size: var(--fz-b-big);
+  color: var(--c-gray-2);
+  line-height: 26rem;
+}
+
+.inputsContainer {
+  display: grid;
+  gap: 16rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: 16rem;
+}
+
+.buttonContainer {
+  width: 174rem;
+}
+
+.phoneInput {
+  border: 1rem solid var(--c-dark-3);
+  padding: 20rem 24rem;
+  color: var(--c-gray-2);
+  font-weight: 400;
+  font-size: var(--fz-b-big);
+  font-family: var(--f-basic);
+  height: 62rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+  border-radius: 40rem;
+  line-height: 24rem;
+  transition: 0.35s ease-out border-color;
+}
+
+.phoneInput:focus {
+  border-color: var(--c-purple);
+}
+
+.phoneInputContainer {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+  .formPopup {
+    width: 280rem;
+    margin-top: 25rem;
+    padding: 50rem 20rem 32rem;
+    grid-template-columns: 1fr;
+    gap: 16rem;
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 13rem;
+    right: 8rem;
+    background-size: 24rem 24rem;
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .gift {
+    /* width: 260rem; */
+    padding: 19rem 0 21rem 20rem;
+    background: linear-gradient(0deg, rgba(54,49,49,1) 40%, rgba(41,37,37,1) 40%);;
+  }
+
+  .giftText {
+    font-size: var(--fz-b-big);
+    font-weight: 400;
+    line-height: 26rem;
+    color: var(--c-white);
+    width: 200rem;
+  }
+  
+  .imageContainer {
+    width: 188rem;
+    height: 202rem;
+    margin-bottom: 7rem;
+    margin-left: 32rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .textContainer {
+    margin-bottom: 16rem;
+  }
+
+  .title {
+    font-size: var(--fz-c-small);
+    line-height: 26rem;
+  }
+  
+  .subtitle {
+    font-size: var(--fz-b-medium);
+    line-height: 22rem;
+  }
+
+  .inputsContainer {
+    margin-bottom: 16rem;
+    width: 100%;
+  }
+
+  .buttonContainer {
+    width: 100%;
+  }
+
+  .phoneInput {
+    padding: 9rem 24rem;
+    font-size: var(--fz-b-small);
+    height: 40rem;
+    line-height: 22rem;
+
+  }
+}

@@ -1,0 +1,40 @@
+.card {
+  display: grid;
+  gap: 30rem;
+  box-sizing: border-box;
+  grid-auto-flow: column;
+  width: 615rem;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 140rem;
+  height: 140rem;;
+}
+
+.text {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-gray-1);
+  font-family: var(--f-basic);
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    gap: 0;
+    grid-auto-flow: row;
+    width: 205rem;
+    align-items: start;
+  }
+  
+  .imageContainer {
+    width: 130rem;
+    height: 130rem;;
+  }
+  
+  .text {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+  }
+}
