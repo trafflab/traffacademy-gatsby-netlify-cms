@@ -16,7 +16,7 @@ export default function PageLayout({ children }) {
       <Helmet htmlAttributes={{lang: 'ru'}}>
         <meta charSet='utf-8' />
         <meta name='author' content='Trafflab' />
-        <meta name="description" content="Как зарабатывать 30 000 $ на арбитраже трафика от Тамерлана Сафиуллина" />
+        <meta name="description" content="Как зарабатывать 3000 $ на арбитраже трафика от Тамерлана Сафиуллина" />
         <meta name="keywords" content="Trafflab, Traffacademy, академия арбитража, academy, арбитраж, трафик, заработок, обучение, Тамерлан Сафиуллина" />
         <link rel="icon" type='image/x-icon' href={favicon} />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
