@@ -14,7 +14,7 @@ export default function PerfectChoiceCard({ data }) {
         <ul className={styles.list}>
           {
             data.list.map((elementData, index) => (
-              <li key={index} className={styles.element}><p className={styles.elementText}>{elementData.elementText}</p></li>
+              <li key={index} className={styles.element}><pre className={styles.elementText}>{elementData.elementText}</pre></li>
             ))
           }
           </ul>
