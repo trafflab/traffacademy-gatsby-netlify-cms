@@ -54,14 +54,14 @@ export default function Success() {
 
             <div className={styles.card}>
               <IconWrapper color='purple'><LampIcon/></IconWrapper>
-              <p className={styles.cardtext}>
+              <pre className={styles.cardtext}>
                 Подтвердите своё участие на онлайн-вебинаре:<br/>
                 <span style={{fontWeight: '700'}}>«Арбитраж трафика: с нуля до миллиона»</span>
-              </p>
+              </pre>
             </div>
 
             <h1 className={styles.title}>Осталось сделать последний шаг</h1>
-            <p className={styles.subtitle}>Для завершения регистрации перейдите в мессенджер и получите подарок</p>
+            <pre className={styles.subtitle}>Для завершения регистрации перейдите в мессенджер и получите подарок</pre>
 
             <div className={styles.buttonContainer}>
               <a href="https://salebot.site/r/trafflab_1">

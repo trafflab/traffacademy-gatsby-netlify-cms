@@ -96,13 +96,13 @@ export default function FormPopup({ closeHandler, isOpen, data }) {
 
         <div className={styles.gift}>
           <div className={styles.imageContainer}><MediaGatsbyImage image={data.bookImage} image_480={data.bookImage_480} /></div>
-          <p className={styles.giftText}>Гайд «5 шагов для заработка от 3000$ в месяц в онлайне»<span style={{color: 'var(--c-purple)'}}> в подарок</span></p>
+          <pre className={styles.giftText}>Гайд «5 шагов для заработка от 3000$ в месяц в онлайне»<span style={{color: 'var(--c-purple)'}}> в подарок</span></pre>
         </div>
 
         <form ref={formRef} className={styles.form}  >
           <div className={styles.textContainer}>
-            <p className={styles.title}>{data.title}</p>
-            <p className={styles.subtitle}>{data.subtitle}</p>
+            <pre className={styles.title}>{data.title}</pre>
+            <pre className={styles.subtitle}>{data.subtitle}</pre>
           </div>
           <div className={styles.inputsContainer}>
             <BasicInput
