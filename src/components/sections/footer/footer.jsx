@@ -22,8 +22,8 @@ export default function Footer() {
         <div className={styles.logoContainer}>
           <Link to={'/'}><Logo /></Link>
           <ul className={styles.requisitesList}>
-            <li><p>ООО "КПМ"</p></li>
-            <li><p>ИНН 9701164081</p></li>
+            <li><pre>ООО "КПМ"</pre></li>
+            <li><pre>ИНН 9701164081</pre></li>
           </ul>
         </div>
 
@@ -31,10 +31,10 @@ export default function Footer() {
           <NavList isFooter={true} />
           <div className={styles.docs}>
             <a href='https://trafflab.online/oferta' >Договор оферты</a>
-            <a href='https://trafflab.online/policy' >Политика конфиднциальности</a>
+            <a href='https://trafflab.online/policy' >Политика конфиденциальности</a>
           </div>
         </div>
-        <p className={styles.year}>{year} &copy; TraffLab. Все права защищены.</p>
+        <pre className={styles.year}>{year} &copy; TraffLab. Все права защищены.</pre>
 
         <div className={styles.contactsContainer}>
           <ContactsList />
@@ -46,7 +46,7 @@ export default function Footer() {
             </li>
             <li className={styles.listEement}>
               <CircledIconWrapper><SkypeIcon/></CircledIconWrapper>
-              <p className={styles.contact}>support@trafflab.com</p>
+              <pre className={styles.contact}>support@trafflab.com</pre>
             </li>
 
           </ul>
