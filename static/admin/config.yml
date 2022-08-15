@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: trafflab/traffacademy-gatsby-netlify-cms
-  branch: webinar
+  branch: webinartwo
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
