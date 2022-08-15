@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     title: "Traffacademy",
     description: "Traffacademy",
-    siteUrl: `https://live.traffacademy.com`
+    siteUrl: `https://livetwo.traffacademy.com`
   },
   plugins: [
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
         output: '/',
-        resolveSiteUrl: () => 'https://live.traffacademy.com',
+        resolveSiteUrl: () => 'https://livetwo.traffacademy.com',
       }
     },
     "gatsby-plugin-react-helmet",
@@ -70,7 +70,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-VQ4QMDYS94",
+          "G-DJPRKVZMTM",
         ],
         pluginConfig: {
           head: true,

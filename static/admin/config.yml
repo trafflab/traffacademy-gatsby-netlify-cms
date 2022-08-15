@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: trafflab/traffacademy-gatsby-netlify-cms
-  branch: live
+  branch: livetwo
   # site_domain: trafflab.github.io
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
