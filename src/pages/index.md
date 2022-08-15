@@ -43,7 +43,7 @@ whatIsIt:
 importantThings:
   title:
     - part: 8 важных вещей,
-    - part: о которых Вы узнаете
+    - part: о которых вы узнаете
   cards:
     - cardImage: /img/important-things/1.png
       imageAlt: таргетированная реклама
