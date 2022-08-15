@@ -18,7 +18,7 @@ opening:
   giftText_480: Гайд «5 шагов для заработка от 3000$ в месяц в онлайне»
   name: Тамерлан Сафиуллин
   buttonText_480: Присоединиться
-  time: 18 августа в 19:00 МСК
+  time: 16 августа в 19:00 МСК
   imageAlt: Тамерлан Сафиуллин
   personImage_480: /img/opening/el-tamik_480.png
   title:
@@ -44,7 +44,7 @@ whatIsIt:
 importantThings:
   title:
     - part: 8 важных вещей,
-    - part: о которых Вы узнаете
+    - part: о которых вы узнаете
   cards:
     - cardImage: /img/important-things/1.png
       imageAlt: таргетированная реклама
@@ -106,7 +106,7 @@ itIsForYou:
         развитии своего онлайн-бизнеса
 perfectChoice:
   title:
-    - part: "Таргетированная реклама – "
+    - part: "Партнерский маркетинг – "
     - part: идеальный выбор,
     - part: "если вы:"
   cards:
