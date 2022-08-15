@@ -49,7 +49,7 @@ export default function Participate({data}) {
             {data.title}<br/>
             <span className={styles.subtitle}>{data.subtitle}</span>
           </h2>
-          <p className={styles.text}>{data.text}</p>
+          <pre className={styles.text}>{data.text}</pre>
           <div className={styles.buttonContainer}><BasicButton text={data.buttonText} handler={openFormPopup} /></div>
         </div>
         <div className={styles.imageContainer}>

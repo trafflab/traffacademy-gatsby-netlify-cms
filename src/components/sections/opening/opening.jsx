@@ -55,7 +55,7 @@ export default function Opening({ data }) {
         <div className={styles.textContainer}>
           <div className={styles.about}>
             <div className={styles.tag}>{data.tag}</div>
-            <p className={styles.time}>{data.time}</p>
+            <pre className={styles.time}>{data.time}</pre>
           </div>
 
           <h1 className={styles.title}>{data.title[0].part}<br/>{data.title[1].part}</h1>
@@ -66,7 +66,7 @@ export default function Opening({ data }) {
           </div>
           <div className={styles.gift}>
             <GiftIcon />
-            <p className={styles.giftText}>{is480 ? data.giftText_480 : data.giftText}</p>
+            <pre className={styles.giftText}>{is480 ? data.giftText_480 : data.giftText}</pre>
           </div>
         </div>
         <div className={styles.imageContainer}>
@@ -76,8 +76,8 @@ export default function Opening({ data }) {
             alt={data.imageAlt}
           />
           <div className={styles.nameContainer}>
-            <p className={styles.name}>{data.name}</p>
-            <p className={styles.jobTitle}>{data.jobTitle}</p>
+            <pre className={styles.name}>{data.name}</pre>
+            <pre className={styles.jobTitle}>{data.jobTitle}</pre>
           </div>
         </div>
       </div>
