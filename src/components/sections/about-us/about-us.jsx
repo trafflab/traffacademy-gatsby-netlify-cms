@@ -39,31 +39,31 @@ export default function AboutUs({data}) {
         <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div>
         <div className={styles.nameContainer}>
           <h3 className={styles.name}>{data.name}</h3>
-          <p className={styles.masterOf}>{data.masterOf}</p>
+          <pre className={styles.masterOf}>{data.masterOf}</pre>
         </div>
         <ul className={styles.list}>
           <li className={`${styles.element} ${styles.budget}`}>
             <AboutUsCard>
               <CoinIcon isBig />
-              <p className={styles.listText}>Рекламный бюджет<br/>за 2021:<br/><span style={{fontWeight: "700"}}>4 000 000 $</span></p>
+              <pre className={styles.listText}>Рекламный бюджет<br/>за 2021:<br/><span style={{fontWeight: "700"}}>4 000 000 $</span></pre>
             </AboutUsCard>
           </li>
           <li className={`${styles.element} ${styles.turnover}`}>
             <AboutUsCard>
               <CoinIcon isBig />
-              <p className={styles.listText}>Оборот на команду<br/> за 2021:<br/><span  className={styles.millions} content="telephone=no" style={{fontWeight: "700", color: 'white'}}>15 000 000 $</span></p>
+              <pre className={styles.listText}>Оборот на команду<br/> за 2021:<br/><span  className={styles.millions} content="telephone=no" style={{fontWeight: "700", color: 'white'}}>15 000 000 $</span></pre>
             </AboutUsCard>
           </li>
           <li className={`${styles.element} ${styles.team}`}>
             <AboutUsCard>
               <HeartIcon isBig/>
-              <p className={styles.listText}><span style={{fontWeight: "700"}}>60 человек</span><br/>в команде</p>
+              <pre className={styles.listText}><span style={{fontWeight: "700"}}>60 человек</span><br/>в команде</pre>
             </AboutUsCard>
           </li>     
           <li className={`${styles.element} ${styles.lines}`}>
             <AboutUsCard>
               <RocketIcon isBig/>
-              <p className={styles.listText}>Ниши: Fin-Tech, Crypto,<br/> Ed-tech</p>
+              <pre className={styles.listText}>Ниши: Fin-Tech, Crypto,<br/> Ed-tech</pre>
             </AboutUsCard>
           </li>
         </ul>

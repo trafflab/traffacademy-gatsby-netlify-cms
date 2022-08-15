@@ -37,7 +37,7 @@ export default function WhatIsIt({ data}) {
       <div className={styles.imageContainer}><MediaGatsbyImage image_480={data.image_480}/></div>
       <div id='whatIsIt' className={styles.content}>
           <h2 className={styles.title}><span style={{color: 'var(--c-purple)'}}>{data.title[0].part}</span> {data.title[1].part}</h2>
-          <p className={styles.text}>{data.text}</p>
+          <pre className={styles.text}>{data.text}</pre>
         
         {
           !is480 
