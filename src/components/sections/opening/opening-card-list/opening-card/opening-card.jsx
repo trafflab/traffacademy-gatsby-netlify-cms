@@ -8,7 +8,7 @@ export default function OpeningCard({ data, color, icon: Icon }) {
       <IconWrapper color={color}><Icon /></IconWrapper>
       <div className={styles.textContainer}>
         <h3 className={styles.title}>{data.title}</h3>
-        <p className={styles.text}>{data.text}</p>
+        <pre className={styles.text}>{data.text}</pre>
       </div>
     </article>
   )
