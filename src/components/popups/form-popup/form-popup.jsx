@@ -68,12 +68,12 @@ export default function FormPopup({ closeHandler, isOpen, data }) {
       if (data.ok) {
         setIsLoading(false)
         navigate('/success')
-        if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form');
+        if (typeof window !== 'undefined') window.yaCounter89928179.reachGoal('send_form');
         return data.json()
       } else {
         setIsLoading(false)
         navigate('/success')
-        if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
+        if (typeof window !== 'undefined') window.yaCounter89928179.reachGoal('send_form_error');
       }
     })
     .then((data) => console.log(data))
@@ -81,7 +81,7 @@ export default function FormPopup({ closeHandler, isOpen, data }) {
       setIsLoading(false)
       navigate('/success')
       console.log(err)
-      if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
+      if (typeof window !== 'undefined') window.yaCounter89928179.reachGoal('send_form_error');
     })
   }
 
