@@ -18,7 +18,7 @@ opening:
   giftText_480: Гайд «5 шагов для заработка от 100 000 ₽ в месяц в онлайне»
   name: Тамерлан Сафиуллин
   buttonText_480: Присоединиться
-  time: 25 августа в 19:00 МСК
+  time: 28 августа в 16:00 МСК
   imageAlt: Тамерлан Сафиуллин
   personImage_480: /img/opening/el-tamik_480.png
   title:
