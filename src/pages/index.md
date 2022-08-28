@@ -84,23 +84,23 @@ itIsForYou:
     - part: Этот вебинар для вас,
     - part: "если вы:"
   cards:
-    - cardImage: /img/it-is-for-you/1.png
+    - cardImage: /img/it-is-for-you/it-is-for-you-1.png
       imageAlt: актуальные знания и навыки, которые позволят зарабатывать от 100 000 ₽
         из любой точки мира
       text: "Хотите получить актуальные знания и навыки, которые позволят зарабатывать
         от 100 000 ₽ из любой точки мира "
-    - cardImage: /img/it-is-for-you/2.png
+    - cardImage: /img/it-is-for-you/it-is-for-you-2.png
       imageAlt: позволяет сотням и тысячам людей успешно зарабатывать
       text: Хотите разобраться в развивающемся направлении, которое позволяет сотням и
         тысячам людей успешно зарабатывать
-    - cardImage: /img/it-is-for-you/3.png
+    - cardImage: /img/it-is-for-you/it-is-for-you-3.png
       imageAlt: зарабатывать в валюте и не зависеть от геополитики
       text: Недовольны своим финансовым положением, хотите начать зарабатывать в
         валюте и не зависеть от геополитики
-    - cardImage: /img/it-is-for-you/4.png
+    - cardImage: /img/it-is-for-you/it-is-for-you-4.png
       imageAlt: сильное и успешное сообщество единомышленников
       text: "Вам интересно попасть в сильное и успешное сообщество единомышленников "
-    - cardImage: /img/it-is-for-you/5.png
+    - cardImage: /img/it-is-for-you/it-is-for-you-5.png
       imageAlt: развитии своего онлайн-бизнеса
       text: Заинтересованы в карьерном росте, управлении своей командой людей и
         развитии своего онлайн-бизнеса
