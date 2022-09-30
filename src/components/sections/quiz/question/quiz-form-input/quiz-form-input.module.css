@@ -1,0 +1,97 @@
+
+.inputContainer {
+  border: 1rem solid var(--c-dark-3);
+  height: 62rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+  border-radius: 40rem;
+  line-height: 24rem;
+  transition: 0.35s ease-out border-color;
+
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.35s linear;
+
+}
+
+.activeContainer {
+  border-color: var(--c-purple);
+
+}
+
+.input {
+  border-color: var(--c-purple);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  margin: 0 20rem 0 20rem;
+  color: var(--c-gray-2);
+  font-weight: 400;
+  font-size: var(--fz-b-big);
+  line-height: 24rem;
+  line-height: 1.5;
+  font-family: var(--f-basic);
+}
+
+.inputButton {
+  width: max-content;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+
+  height: 100%;
+  min-width: 62rem;
+  transition: all 0.35s linear;
+  border: 1rem solid var(--c-dark-3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.activeContainer .inputButton {
+  border-color: var(--c-purple);
+}
+
+.activeInput {
+  background-color: var(--c-purple);
+}
+
+.activeInput:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.arrowIcon {
+  width: 24rem;
+  height: 24rem;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .inputContainer {
+    height: 40rem;
+    line-height: 22rem;
+  }
+
+  .input {
+    font-size: var(--fz-b-small);
+
+  }
+
+  .inputButton {
+    min-width: 40rem;
+  }
+
+  .arrowIcon {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+

@@ -2,9 +2,7 @@
 quiz:
   bg: /img/quiz-page/quiz-bg.png
   bg_480: /img/quiz-page/quiz-bg_480.png
-  formText: "Оставьте вашу почту и номер телефона для связи в Telegram или
-    WhatsApp, чтобы ребята из команды связались с вами и предоставили доступ к
-    бесплатному курсу:"
+  formText: 'Оставьте вашу почту и номер телефона для связи в Telegram или WhatsApp, чтобы ребята из команды связались с вами и предоставили доступ к бесплатному курсу:'
   questions:
     - questionText: Выберите ваш возраст?
       answers:
@@ -108,5 +106,5 @@ quiz:
           points: 1
         - isUserAnswer: false
           answerText: Нет
-          points: 5
+          points: 5 
 ---

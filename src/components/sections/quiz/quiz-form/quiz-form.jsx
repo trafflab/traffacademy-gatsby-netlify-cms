@@ -8,22 +8,70 @@ import {Loader} from "../../../ui";
 import PhoneInput from 'react-phone-input-2';
 import queryString from "query-string";
 
-export default function QuizForm({ quizResult, totalScore }) {
+export default function QuizForm({ quizResult, totalScore, formText }) {
 
   const {values, handleChange, isValid, handleReset, checkValidity} = useForm()
   const [isLoading, setIsLoading] = React.useState(false);
   const formRef = React.useRef()
 
+  const navigateToResult = () => {
+    if (totalScore > 12) navigate('https://webinar.traffacademy.com/')
+    else navigate('https://webinartwo.traffacademy.com/')
+  }
+
+  const handleSendClick = (evt) => {
+    // console.log(quizResult, totalScore);
+    evt.preventDefault()
+    setIsLoading(true)
+    const utmData = typeof window !== 'undefined' ? queryString.parse(window.location.search) : false;
+
+    const dataToSend = {
+      name: values.name,
+      phone: values.phone ? values.phone : '',
+      email: values.tg ? values.tg : '',
+      utm_source: utmData?.utm_source || '',
+      utm_content: utmData?.utm_content || '',
+      utm_medium: utmData?.utm_medium || '',
+      utm_campaign: utmData?.utm_campaign || '',
+      utm_term: utmData?.utm_term || '',
+      utm_referrer: utmData?.utm_referrer || '',
+    }
+
+    fetch('https://trafflab-api.space/rest-amo.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(dataToSend)
+    })
+    .then(data => {
+      if (data.ok) {
+        setIsLoading(false)
+        navigateToResult()
+        if (typeof window !== 'undefined') window.yaCounter90615658.reachGoal('send_form');
+        return data.json()
+      } else {
+        setIsLoading(false)
+        navigateToResult()
+        if (typeof window !== 'undefined') window.yaCounter90615658.reachGoal('send_form_error');
+      }
+    })
+    .then((data) => console.log(data))
+    .catch(err => {
+      setIsLoading(false)
+      navigateToResult()
+      console.log(err)
+      if (typeof window !== 'undefined') window.yaCounter90615658.reachGoal('send_form_error');
+    })
+}
 
   React.useEffect(() => {
     handleReset()
   }, [])
 
-  const handleSendClick = () => console.log(quizResult, totalScore);
-
   return (
     <form ref={formRef} className={styles.form}>
-      <h1 className={styles.title}><span>Оставьте вашу почту и номер телефона для связи в Telegram или WhatsApp, чтобы ребята из команды связались с вами и предоставили доступ к бесплатному курсу: </span></h1>
+      <h1 className={styles.title}><span>{formText}</span></h1>
       <div className={styles.inputsContainer}>
         <BasicInput
           name='name'
@@ -37,10 +85,9 @@ export default function QuizForm({ quizResult, totalScore }) {
         <PhoneInput 
           inputProps={{
             name: 'phone',
-            required: true,
             minLength: "20",
           }}
-          placeholder='Телефон'
+          placeholder='Телефон whatsup'
           value={values.phone}
           onChange={handleChange}
           inputClass={styles.phoneInput}
@@ -52,13 +99,12 @@ export default function QuizForm({ quizResult, totalScore }) {
           isValid={() => checkValidity(formRef)}
         />
         <BasicInput
-          name='email'
-          placeholder='E-mail'
-          value={values.email}
+          name='tg'
+          placeholder='Ник telegram'
+          value={values.tg}
           onChange={handleChange}
           minLength={1}
-          isRequired={true}
-          type='email'
+          type='text'
         />
       </div>
       {
@@ -68,7 +114,7 @@ export default function QuizForm({ quizResult, totalScore }) {
               <BasicButton
                 type="submit"
                 text='Отправить'
-                isActive={isValid}
+                isActive={isValid && (values.tg || values.phone)}
                 handler={handleSendClick}
               />
             </div>
@@ -78,48 +124,3 @@ export default function QuizForm({ quizResult, totalScore }) {
 }
 
 
-// const handleSendClick = (evt) => {
-//   evt.preventDefault()
-//   setIsLoading(true)
-//   const utmData = typeof window !== 'undefined' ? queryString.parse(window.location.search) : false;
-
-//   const dataToSend = {
-//     name: values.name,
-//     phone: values.phone,
-//     email: '',
-//     utm_source: utmData?.utm_source || '',
-//     utm_content: utmData?.utm_content || '',
-//     utm_medium: utmData?.utm_medium || '',
-//     utm_campaign: utmData?.utm_campaign || '',
-//     utm_term: utmData?.utm_term || '',
-//     utm_referrer: utmData?.utm_referrer || '',
-//   }
-//   console.log(dataToSend);
-
-//   fetch('https://trafflab-api.space/rest-amo.php', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(dataToSend)
-//   })
-//   .then(data => {
-//     if (data.ok) {
-//       setIsLoading(false)
-//       navigate('/success')
-//       if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form');
-//       return data.json()
-//     } else {
-//       setIsLoading(false)
-//       navigate('/success')
-//       if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
-//     }
-//   })
-//   .then((data) => console.log(data))
-//   .catch(err => {
-//     setIsLoading(false)
-//     navigate('/success')
-//     console.log(err)
-//     if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
-//   })
-// }

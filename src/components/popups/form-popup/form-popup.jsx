@@ -33,7 +33,6 @@ export default function FormPopup({ closeHandler, isOpen, data }) {
       utm_term: utmData?.utm_term || '',
       utm_referrer: utmData?.utm_referrer || '',
     }
-    console.log(dataToSend);
 
     fetch('https://trafflab-api.space/rest-amo.php', {
       method: 'POST',

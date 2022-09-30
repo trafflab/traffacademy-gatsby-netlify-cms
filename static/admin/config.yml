@@ -237,3 +237,41 @@ collections:
                 { label: "buttonText", name: "buttonText", widget: "string" },
               ]
           }
+      - file: src/pages/quiz.md
+        name: quiz
+        label: 'Quiz'
+        fields:
+          - {
+            name: quiz,
+            label: quiz,
+            widget: object,
+            fields: 
+              [
+                {
+                  name: questions,
+                  label: questions,
+                  widget: "list",
+                  allow_add: true,
+                  fields: 
+                    [
+                      { label: "questionText", name: "questionText", widget: "string" },
+                      {
+                        name: answers,
+                        label: answers,
+                        widget: "list",
+                        allow_add: true,
+                        fields: 
+                        [
+                          { label: "isUserAnswer", name: "isUserAnswer", widget: "boolean", default: false},
+                          { label: "answerText", name: "answerText", widget: "string" },
+                          { label: "points", name: "points", widget: "number" },
+                        ]
+                      }
+                    ]
+                },
+                {label: "formText", name: "formText", widget: "string" },
+              ]
+
+          }
+
+                

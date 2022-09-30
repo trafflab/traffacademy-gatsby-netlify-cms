@@ -3,3 +3,9 @@
   align-items: center;
   flex-direction: column;
 }
+
+.preview {
+  display: grid;
+  gap: 50rem;
+  margin-bottom: 50rem;
+}
