@@ -2,11 +2,9 @@ import * as React from "react";
 import { PageLayout } from "../components/layouts";
 import {
   Success,
-  Footer
 } from '../components/sections';
 import { Helmet } from "react-helmet";
 export default function SuccessPage() {
-
 
   return (
     <PageLayout>

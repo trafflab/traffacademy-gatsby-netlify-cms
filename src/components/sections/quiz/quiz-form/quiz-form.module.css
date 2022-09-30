@@ -1,0 +1,82 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--fz-h-small);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--c-white);
+  max-width: 800rem;
+  
+  margin: 48rem 0 48rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 210rem;
+
+}
+
+.inputsContainer {
+  display: grid;
+  width: 380rem;
+  gap: 24rem;
+  margin-bottom: 24rem;
+}
+
+.phoneInput {
+  border: 1rem solid var(--c-dark-3);
+  padding: 20rem 24rem;
+  color: var(--c-gray-2);
+  font-weight: 400;
+  font-size: var(--fz-b-big);
+  font-family: var(--f-basic);
+  height: 62rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+  border-radius: 40rem;
+  line-height: 24rem;
+  transition: 0.35s ease-out border-color;
+}
+
+.phoneInput:focus {
+  border-color: var(--c-purple);
+}
+
+.phoneInputContainer {
+  width: 100%;
+}
+
+.buttonContainer {
+  width: 380rem;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: var(--fz-b-medium);
+    width: 290rem;
+    height: 130rem;
+    margin: 24rem 0 24rem;
+  }
+
+  .inputsContainer {
+    width: 290rem;
+    gap: 24rem;
+    margin-bottom: 24rem;
+  }
+
+  .phoneInput {
+    padding: 9rem 24rem;
+    font-size: var(--fz-b-small);
+    height: 40rem;
+    line-height: 22rem;
+  }
+  .buttonContainer {
+    width: 290rem;
+  }
+}

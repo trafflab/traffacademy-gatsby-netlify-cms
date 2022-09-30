@@ -1,0 +1,40 @@
+.bar {
+  margin-top: 24rem;
+  width: 380rem;
+  border: 1rem solid var(--c-purple);
+  height: 25rem;
+  border-radius: 58rem;
+
+  display: flex;
+  align-items: center;
+  padding: 3.5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.point {
+  border-radius: 58rem;
+  height: 100%;
+  width: 12.5%;
+  background-color: var(--c-purple);
+  transition: width 0.2s linear;
+}
+
+.score {
+  font-size: var(--fz-b-small);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--c-white);
+  position: absolute;
+  top: 3.5rem;
+  left: calc(50% - 5rem);
+}
+
+@media screen and (max-width: 480px) {
+  .bar {
+    margin-top: 24rem;
+    width: 290rem;
+    height: 20rem;
+    padding: 3.5rem;
+  }
+}

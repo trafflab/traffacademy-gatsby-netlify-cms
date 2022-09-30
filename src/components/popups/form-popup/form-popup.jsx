@@ -12,28 +12,6 @@ import PhoneInput from 'react-phone-input-2';
 import queryString from "query-string";
 
 export default function FormPopup({ closeHandler, isOpen, data }) {
-  // const data = useStaticQuery(graphql`
-  //   query formPopupQuery {
-  //     markdownRemark {
-  //       frontmatter {
-  //         formPopup {
-  //           title
-  //           subtitle
-  //           bookImage {
-  //             childImageSharp {
-  //               gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
-  //             }
-  //           }
-  //           bookImage_480 {
-  //             childImageSharp {
-  //               gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `).markdownRemark.frontmatter.formPopup
 
   const {values, handleChange, isValid, handleReset, checkValidity} = useForm()
   const [isLoading, setIsLoading] = React.useState(false);

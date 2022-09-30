@@ -9,6 +9,12 @@ exports.createPages = async function ({ actions, graphql }) {
     component: require.resolve(`./src/templates/index-page/index-page-template.jsx`),
     context: { slug: '/' },
   })
+
+  actions.createPage({
+    path: '/quiz',
+    component: require.resolve(`./src/templates/quiz-page/quiz-page-template.jsx`),
+    context: { slug: '/quiz' },
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
