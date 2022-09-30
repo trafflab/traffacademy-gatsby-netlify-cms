@@ -25,7 +25,6 @@ export default function Quiz({ data, isPreview }) {
   React.useEffect(() => {
     if (questionNumber < 7) console.log(result);
   })
-  console.log(data);
   return (
     <section className={styles.quiz}>
       { isPreview
