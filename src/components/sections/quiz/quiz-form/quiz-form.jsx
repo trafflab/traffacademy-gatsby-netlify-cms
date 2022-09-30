@@ -27,14 +27,15 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
 
     const dataToSend = {
       name: values.name,
-      phone: values.phone ? values.phone : '',
-      email: values.tg ? values.tg : '',
+      phone: values.phone || '',
+      email: values.tg || '',
       utm_source: utmData?.utm_source || '',
       utm_content: utmData?.utm_content || '',
       utm_medium: utmData?.utm_medium || '',
       utm_campaign: utmData?.utm_campaign || '',
       utm_term: utmData?.utm_term || '',
       utm_referrer: utmData?.utm_referrer || '',
+      test1: 'test1Value',
     }
 
     fetch('https://trafflab-api.space/rest-amo.php', {
