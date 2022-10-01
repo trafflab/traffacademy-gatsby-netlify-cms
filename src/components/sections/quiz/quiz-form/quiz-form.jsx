@@ -15,8 +15,8 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
   const formRef = React.useRef()
 
   const navigateToResult = () => {
-    // if (totalScore > 12) navigate('https://webinar.traffacademy.com/')
-    // else navigate('https://webinartwo.traffacademy.com/')
+    if (totalScore > 12) navigate('https://webinar.traffacademy.com/')
+    else navigate('https://webinartwo.traffacademy.com/')
   }
 
   const handleSendClick = (evt) => {
@@ -76,6 +76,11 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
     handleReset()
   }, [])
 
+  console.log(isValid && (values.tg || values.phone));
+  console.log(isValid)
+  console.log(values.tg)
+  console.log(values.phone)
+
   return (
     <form ref={formRef} className={styles.form}>
       <h1 className={styles.title}><span>{formText}</span></h1>
@@ -121,7 +126,7 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
               <BasicButton
                 type="submit"
                 text='Отправить'
-                isActive={isValid && (values.tg || values.phone)}
+                isActive={isValid && (Boolean(values.tg) || Boolean(values.phone))}
                 handler={handleSendClick}
               />
             </div>
