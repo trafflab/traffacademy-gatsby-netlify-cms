@@ -15,16 +15,13 @@ export default function Quiz({ data, isPreview }) {
     setTotalScore(totalScore + answerPoints)
     setQuestionNumber(questionNumber + 1)
     setCurrentQuestion(data.questions[questionNumber + 1])
-    setResult([...result, {question: `${questionNumber + 1} - ${question}`, answer}])
+    setResult([...result, {question, answer}])
   }
 
   React.useEffect(() => {
     setCurrentQuestion(data.questions[0])
   }, [])
 
-  React.useEffect(() => {
-    if (questionNumber < 7) console.log(result);
-  })
   return (
     <section className={styles.quiz}>
       { isPreview

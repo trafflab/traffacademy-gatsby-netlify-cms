@@ -20,7 +20,6 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
   }
 
   const handleSendClick = (evt) => {
-    // console.log(quizResult, totalScore);
     evt.preventDefault()
     setIsLoading(true)
     const utmData = typeof window !== 'undefined' ? queryString.parse(window.location.search) : false;
@@ -35,7 +34,13 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
       utm_campaign: utmData?.utm_campaign || '',
       utm_term: utmData?.utm_term || '',
       utm_referrer: utmData?.utm_referrer || '',
-      test1: 'test1Value',
+      question1: `${quizResult[0].question} - ${quizResult[0].answer}`,
+      question2: `${quizResult[1].question} - ${quizResult[1].answer}`,
+      question3: `${quizResult[2].question} - ${quizResult[2].answer}`,
+      question4: `${quizResult[3].question} - ${quizResult[3].answer}`,
+      question5: `${quizResult[4].question} - ${quizResult[4].answer}`,
+      question6: `${quizResult[5].question} - ${quizResult[5].answer}`,
+      question7: `${quizResult[6].question} - ${quizResult[6].answer}`,
     }
 
     fetch('https://trafflab-api.space/rest-amo.php', {
