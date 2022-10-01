@@ -15,8 +15,8 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
   const formRef = React.useRef()
 
   const navigateToResult = () => {
-    if (totalScore > 12) navigate('https://webinar.traffacademy.com/')
-    else navigate('https://webinartwo.traffacademy.com/')
+    // if (totalScore > 12) navigate('https://webinar.traffacademy.com/')
+    // else navigate('https://webinartwo.traffacademy.com/')
   }
 
   const handleSendClick = (evt) => {
@@ -25,6 +25,7 @@ export default function QuizForm({ quizResult, totalScore, formText }) {
     const utmData = typeof window !== 'undefined' ? queryString.parse(window.location.search) : false;
 
     const dataToSend = {
+      from: 'quiz',
       name: values.name,
       phone: values.phone || '',
       email: values.tg || '',

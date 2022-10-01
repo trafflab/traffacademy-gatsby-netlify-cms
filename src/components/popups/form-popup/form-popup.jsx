@@ -23,6 +23,7 @@ export default function FormPopup({ closeHandler, isOpen, data }) {
     const utmData = typeof window !== 'undefined' ? queryString.parse(window.location.search) : false;
 
     const dataToSend = {
+      from: 'landing',
       name: values.name,
       phone: values.phone,
       email: '',
