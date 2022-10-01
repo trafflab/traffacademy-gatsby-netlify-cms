@@ -4,9 +4,6 @@ import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image";
 
 export default function MediaGatsbyImage({ image_480=false, image=false, alt='trafflab' }) {
 
-  console.log(image_480);
-  console.log(image);
-
   const images = (typeof image === 'object' || typeof image_480 === 'object') ? withArtDirection(getImage(image ? image : image_480), [
     {
       media: '(max-width: 480px)',
@@ -14,7 +11,6 @@ export default function MediaGatsbyImage({ image_480=false, image=false, alt='tr
     }
   ]) : {image_480: image_480, image: image}
 
-  console.log(images);
 
   return (
     (typeof image === 'object' || typeof image_480 === 'object') ? (
