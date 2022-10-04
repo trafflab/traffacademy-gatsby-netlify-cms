@@ -1,5 +1,5 @@
 .formPopup {
-  width: 834rem;
+  width: 610rem;
   background-color: var(--c-dark-2);
   position: relative;
   margin-top: 87rem;
@@ -7,9 +7,7 @@
   overflow: hidden;
   padding: 62rem;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 62rem;
+  display: flex;
 }
 
 .closeButton {
@@ -71,8 +69,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 324rem;
-  /* justify-content: space-between; */
+  width: 100%;
 }
 
 .textContainer {
@@ -104,7 +101,7 @@
 }
 
 .buttonContainer {
-  width: 174rem;
+  width: 100%;
 }
 
 .phoneInput {
