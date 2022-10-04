@@ -23,7 +23,7 @@ opening:
   personImage_480: /img/opening/el-tamik_480.png
   title:
     - part: Как зарабатывать на арбитраже трафика
-    - part: в период неопределенности
+    - part: в условиях неопределенности
   tag: Бесплатный курс
   jobTitle: CEO TRAFFLAB
   giftText: Зарегистрируйся и получи гайд «5 шагов для заработка от 3000$ в месяц
