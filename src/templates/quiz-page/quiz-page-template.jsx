@@ -6,11 +6,20 @@ import { Helmet } from "react-helmet";
 import Quiz from "../../components/sections/quiz/quiz";
 import { MediaGatsbyImage } from "../../components/ui";
 import { Loader } from "../../components/ui";
+import favicon from '../../images/misc/favicon.ico';
 
 export function QuizPageTemplate({ data, isPreview }) {
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: 'ru'}}>
+        <meta charSet='utf-8' />
+        <meta name='author' content='Trafflab' />
+        <meta name="description" content="Как зарабатывать 3000 $ на арбитраже трафика от Тамерлана Сафиуллина" />
+        <meta name="keywords" content="Trafflab, Traffacademy, академия арбитража, academy, арбитраж, трафик, заработок, обучение, Тамерлан Сафиуллина" />
+        <link rel="icon" type='image/x-icon' href={favicon} />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta> */}
+        <meta name="yandex-verification" content="a71896519426bd38" />
+        <meta name="google-site-verification" content="WIioruuTqjwjxZLLtd6XLTpy892y3B2tSbQjm7q825Q" />
         <title>Quiz | Traffacademy</title>
       </Helmet>
       <div className={styles.page}>
