@@ -134,14 +134,20 @@
   }
 
   .about {
-    gap: 12rem;
+    /* gap: 12rem; */
     margin-bottom: 20rem;
-    grid-auto-flow: row;
+    /* grid-auto-flow: row-reverse; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .tag {
-    font-size: var(--fz-b-small);
+    font-size: var(--fz-b-medium);
+    font-weight: 700;
     line-height: 14rem;
+    border-color: var(--c-purple);
+    box-shadow: 3rem 3rem 20rem 3rem rgb(204 153 255 / 42%);
   }
 
   .time {
